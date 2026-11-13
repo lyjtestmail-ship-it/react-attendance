@@ -102,5 +102,5 @@ function App() {
 
 // Git 변경 감지 테스트
 // 두 번째 변경 테스트
-// feature/student-edit 브랜치 테스트
+// master 브랜치에서 수정한 내용
 export default App;
