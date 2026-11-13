@@ -1,75 +1,75 @@
-# React + TypeScript + Vite
+React 학생 출석부 프로젝트
+React와 TypeScript를 활용하여 개발한 학생 출석 관리 웹 애플리케이션입니다.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+1. 프로젝트 소개
+학생 정보를 등록하고 날짜별 출석 및 결석 상태를 관리할 수 있는 출석부 프로그램입니다.
 
-Currently, two official plugins are available:
+2. 개발 환경
+React 19
+TypeScript
+Vite 8
+CSS
+JavaScript
+3. 주요 기능
+학생 추가 및 삭제
+학생 이름 수정
+학생 이름 검색
+날짜별 출석 및 결석 관리
+전체 학생 수 통계
+출석 인원 통계
+결석 인원 통계
+미확인 인원 통계
+LocalStorage를 이용한 데이터 저장
+기존 학생 데이터 형식 변환 지원
+4. React 주요 학습 기술
+useState
+useReducer
+useEffect
+useMemo
+useCallback
+React.memo
+Props 및 TypeScript 타입 관리
+컴포넌트 분리 및 재사용
+5. 프로젝트 구조
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+text
+src/
+├── components/
+│   ├── Dashboard.tsx
+│   ├── StatCard.tsx
+│   ├── Student.tsx
+│   ├── StudentForm.tsx
+│   └── StudentList.tsx
+├── constants/
+│   └── ActionTypes.ts
+├── reducers/
+│   └── studentReducer.ts
+├── types/
+│   └── Students.ts
+├── utils/
+│   ├── date.ts
+│   ├── studentStatistics.ts
+│   ├── studentStorage.ts
+│   └── studentValidation.ts
+├── App.tsx
+├── App.css
+├── index.css
+└── main.tsx
+6. 프로젝트 실행 방법
+프로젝트를 다운로드한 후 터미널에서 다음 명령어를 실행합니다.
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+bash
+npm install
+npm run dev
+7. 프로젝트 빌드
 
-## Expanding the ESLint configuration
+bash
+npm run build
+빌드 결과물은 dist 폴더에 생성됩니다.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+8. 데이터 저장
+학생 데이터는 브라우저의 LocalStorage에 저장됩니다.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
-
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
+9. Git 관리
+Git과 GitHub를 활용하여 프로젝트의 버전 관리 및 소스 코드 백업을 진행합니다.
