@@ -1,0 +1,194 @@
+/* C:\project\react\reducer\src\App.css */
+.app {
+    width: 100%;
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+.app h2 {
+    margin-top: 0;
+    color: #263b5e;
+    text-align: center;
+}
+
+.subtitle {
+    text-align: center;
+    color: #94a3b8;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-bottom: 100px;
+}
+
+@media (max-width: 480px) {
+    .dashboard {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.stat-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 18px 10px;
+    border-radius: 12px;
+}
+
+.stat-card span {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.stat-card strong {
+    font-size: 28px;
+}
+
+.stat-card.total {
+    background: #eff6ff;
+    color: #2563eb;
+}
+
+.stat-card.attendance {
+    background: #ecfdf5;
+    color: #059669;
+}
+
+.stat-card.absence {
+    background: #fef2f2;
+    color: #dc2626;
+}
+
+.stat-card.unmarked {
+    background: #fff7ed;
+    color: #ea580c;
+}
+
+.input-area {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.input-area input,
+.search-area input {
+    width: 100%;
+    min-width: 0;
+    padding: 12px;
+    border: 1px solid #dbe2ea;
+    border-radius: 8px;
+    outline: none;
+}
+
+.input-area input {
+    flex: 1;
+}
+
+.input-area input:focus,
+.search-area input:focus {
+    border-color: #5085e5;
+}
+
+.add-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #5085e5;
+    color: white;
+    cursor: pointer;
+}
+
+.add-button:hover {
+    background: #356bc9;
+}
+
+.search-area {
+    margin-bottom: 20px;
+}
+
+.student-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.student-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 14px;
+    background: #f8fafc;
+    border-radius: 10px;
+}
+
+.student-name {
+    font-weight: 600;
+    overflow-wrap: anywhere;
+}
+
+.student-buttons {
+    display: flex;
+    gap: 8px;
+    flex-shrink: 0;
+    justify-content: flex-end;
+}
+
+.student-buttons button {
+    padding: 7px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.attendance-button {
+    background: #dcfce7;
+    color: #15803d;
+}
+
+.absence-button {
+    background: #fee2e2;
+    color: #dc2626;
+}
+
+.delete-button {
+    background: #e5e7eb;
+    color: #4b5563;
+}
+
+.empty-message {
+    text-align: center;
+    padding: 25px;
+    color: #94a3b8;
+}
+
+@media (max-width: 480px) {
+    .app {
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+    .stat-card {
+        padding: 14px 5px;
+    }
+
+    .student-item {
+        padding: 12px;
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .input-area {
+        flex-direction: column;
+        align-items: stretch;
+    }
+   
+}
