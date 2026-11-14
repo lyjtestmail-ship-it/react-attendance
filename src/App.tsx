@@ -105,4 +105,5 @@ function App() {
 // master 브랜치에서 수정한 내용
 // feature/student-edit 브랜치 테스트1
 // A developer: collaboration practice
+// A developer: pull practice
 export default App;
