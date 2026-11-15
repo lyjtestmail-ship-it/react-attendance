@@ -73,3 +73,12 @@ npm run build
 
 9. Git 관리
 Git과 GitHub를 활용하여 프로젝트의 버전 관리 및 소스 코드 백업을 진행합니다.
+
+10. Git 협업 실습
+Git 브랜치를 활용한 협업 과정을 학습합니다.
+
+feature 브랜치를 이용한 독립적인 기능 개발
+GitHub 원격 저장소에 브랜치 push
+Pull Request 생성 및 관리
+코드 리뷰와 변경 사항 검토
+Pull Request를 통한 브랜치 병합
